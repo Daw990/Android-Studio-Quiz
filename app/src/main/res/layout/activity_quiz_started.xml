@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".QuizStarted">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtQuestion1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="30dp"
+                        android:text="Jaka jest najdłuższa rzeka w Polsce? (2pkt)"
+                        android:textSize="30sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RG_q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="30dp">
+
+                        <RadioButton
+                            android:id="@+id/radioButton1q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Amazonka" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2q1_true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="20dp"
+                            android:text="Wisła" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Odra" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/txtQuestion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="30dp"
+                        android:text="W ktorym roku wybuchła II wojna Światowa? (1pkt)"
+                        android:textSize="30sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RG_q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="30dp">
+
+                        <RadioButton
+                            android:id="@+id/radioButton1q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1839" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="20dp"
+                            android:text="1914" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3q2_true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1939" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/txtQuestion3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Którą planetą od słońa jest ziemia ? (4pkt)"
+                        android:textSize="30sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RG_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="30dp">
+
+                        <RadioButton
+                            android:id="@+id/radioButton1q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="dziewiątą" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2q3_true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="20dp"
+                            android:text="trzecią" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="piątą" />
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btnEndQuiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Koniec!"
+                        android:onClick="OnClick"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

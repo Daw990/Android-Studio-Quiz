@@ -28,8 +28,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="30dp"
-                        android:text="Jaka jest najdłuższa rzeka w Polsce? (2pkt)"
-                        android:textSize="30sp" />
+                        android:text="cos"
+                        android:textSize="30sp"
+                        tools:visibility="visible" />
 
                     <RadioGroup
                         android:id="@+id/RG_q1"

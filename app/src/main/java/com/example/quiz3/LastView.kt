@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_last_view.*
 
 class LastView : AppCompatActivity() {
 
@@ -13,14 +14,15 @@ class LastView : AppCompatActivity() {
         setContentView(R.layout.activity_last_view)
 
         var points = getIntent().getIntExtra("points", 0)
-        var abcSummary = findViewById<TextView>(R.id.txtWynik)
 
-        abcSummary.text = points.toString() + " / 7"
+        txtWynik.setText(points.toString() + " / 6")
+
     }
 
     fun OnClick(view: View) {
 
         val intent = Intent(this, QuizStarted::class.java)
         startActivity(intent)
+
     }
 }
